@@ -9,14 +9,20 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       marques: {
-        type: Sequelize.STRING
-      },
+        type: Sequelize.STRING,
+        validate: {
+          notEmpty: true
+      }},
       type: {
-        type: Sequelize.STRING
-      },
+        type: Sequelize.STRING,
+        validate: {
+          notEmpty: true
+      }},
       couleurs: {
-        type: Sequelize.STRING
-      },
+        type: Sequelize.STRING,
+        validate: {
+          notEmpty: true
+      }},
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
